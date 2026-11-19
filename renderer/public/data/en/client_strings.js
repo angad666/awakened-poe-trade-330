@@ -42,6 +42,7 @@ export default {
   TWICE_CORRUPTED: 'Twice Corrupted',
   UNIDENTIFIED: 'Unidentified',
   UNIDENTIFIED_TIER: /^Unidentified\s*\(Tier\s*(\d+)\)$/,
+  STORED_EXPERIENCE: /^Stored Experience\s*[:：]\s*(.+)$/,
   ITEM_SUPERIOR: /^Superior (.*)$/,
   MAP_BLIGHTED: /^Blighted (.*)$/,
   MAP_BLIGHT_RAVAGED: /^Blight-ravaged (.*)$/,

@@ -164,6 +164,7 @@ export interface TranslationDict {
   TWICE_CORRUPTED: string
   UNIDENTIFIED: string
   UNIDENTIFIED_TIER: RegExp
+  STORED_EXPERIENCE: RegExp
   ITEM_SUPERIOR: RegExp
   MAP_BLIGHTED: RegExp
   MAP_BLIGHT_RAVAGED: RegExp

@@ -142,6 +142,7 @@ interface TradeRequest {
           unidentified_tier?: FilterRange
           stack_size?: FilterRange
           memory_level?: FilterRange
+          stored_experience?: FilterRange
           foulborn_item?: FilterBoolean
           vestigial?: FilterBoolean
         }
@@ -475,6 +476,10 @@ export function createTradeRequest (filters: ItemFilters, stats: FilterOrGroup[]
       case 'item.memory_strands':
         propSet(query.filters, 'misc_filters.filters.memory_level.min', typeof input.min === 'number' ? input.min : undefined)
         propSet(query.filters, 'misc_filters.filters.memory_level.max', typeof input.max === 'number' ? input.max : undefined)
+        break
+      case 'item.stored_experience':
+        propSet(query.filters, 'misc_filters.filters.stored_experience.min', typeof input.min === 'number' ? input.min : undefined)
+        propSet(query.filters, 'misc_filters.filters.stored_experience.max', typeof input.max === 'number' ? input.max : undefined)
         break
       case 'item.armour':
         propSet(query.filters, 'armour_filters.filters.ar.min', typeof input.min === 'number' ? input.min : undefined)

@@ -42,6 +42,18 @@ export function filterMemoryStrands (ctx: FiltersCreationContext, hidden?: strin
   }
 }
 
+export function filterStoredExperience (ctx: FiltersCreationContext) {
+  if (ctx.item.storedExperience != null) {
+    ctx.filters.push(propToFilter({
+      ref: 'Stored Experience: #',
+      tradeId: 'item.stored_experience',
+      roll: { min: 0, max: ctx.item.storedExperience, value: ctx.item.storedExperience },
+      sources: [],
+      disabled: false
+    }, ctx))
+  }
+}
+
 export const ARMOUR_STATS = new Set<string>([
   ...QUALITY_STATS.ARMOUR.flat,
   ...QUALITY_STATS.EVASION.flat,
