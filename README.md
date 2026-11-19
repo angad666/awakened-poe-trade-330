@@ -19,6 +19,8 @@ because the installer isn't code-signed: click *More info → Run anyway*.
 - **Uniques with skill names** such as "Trigger Level 10 Void Gaze…" are matched again (3.30 added an
   invisible character before skill names).
 - **Frayed Thread** price checks, plus six uniques and a stat that the 3.30 data update dropped.
+- **Facetor's Lens:** price checks work again (the item was missing from the data), and the search
+  includes a *Stored Experience* filter so full and nearly empty lenses aren't priced together.
 
 Also included from the official source, but not yet in an official release: twice-corrupted items,
 rare-only mods and 9-mod maps, Thread/Atlas Drops map stats, and the *Not Catalysed* jewellery filter.
