@@ -220,6 +220,12 @@ export function tryParseTranslation (
         : undefined
     }
   }
+
+  // 3.30: the game inserts a zero-width space before skill names
+  // ("Trigger Level 10 <U+200B>Void Gaze ..."), but not every stat in data has that variant
+  if (stat.string.includes('\u200B')) {
+    return tryParseTranslation({ ...stat, string: stat.string.replace(/\u200B/g, '') }, modType, itemCategory)
+  }
 }
 
 export function getRollOrMinmaxAvg (values: number[]): number {
