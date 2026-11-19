@@ -41,6 +41,7 @@ export default {
   CORRUPTED: '타락',
   TWICE_CORRUPTED: '두 번 타락',
   UNIDENTIFIED: '미확인',
+  UNIDENTIFIED_TIER: /^미확인\s*\([^\d)]*(\d+)[^)]*\)$/,
   ITEM_SUPERIOR: /^상급 (.*)$/,
   MAP_BLIGHTED: /^역병 걸린 (.*)$/,
   MAP_BLIGHT_RAVAGED: /^역병에 유린당한 (.*)$/,

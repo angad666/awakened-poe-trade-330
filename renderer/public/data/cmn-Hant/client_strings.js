@@ -41,6 +41,7 @@ export default {
   CORRUPTED: '已汙染',
   TWICE_CORRUPTED: '二次汙染',
   UNIDENTIFIED: '未鑑定',
+  UNIDENTIFIED_TIER: /^未鑑定\s*[(（][^\d)）]*(\d+)[^)）]*[)）]$/,
   ITEM_SUPERIOR: /^精良的 (.*)$/,
   MAP_BLIGHTED: /^凋落的 (.*)$/,
   MAP_BLIGHT_RAVAGED: /^凋落蔓延的 (.*)$/,

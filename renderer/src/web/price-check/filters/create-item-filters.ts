@@ -419,6 +419,12 @@ export function createFilters (
       value: true,
       disabled: (item.rarity !== ItemRarity.Unique)
     }
+    if (item.unidentifiedTier) {
+      filters.unidentifiedTier = {
+        value: item.unidentifiedTier,
+        disabled: false
+      }
+    }
   }
 
   if (item.isVeiled) {

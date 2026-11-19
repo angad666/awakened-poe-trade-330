@@ -41,6 +41,7 @@ export default {
   CORRUPTED: 'Осквернено',
   TWICE_CORRUPTED: 'Дважды осквернено',
   UNIDENTIFIED: 'Неопознано',
+  UNIDENTIFIED_TIER: /^Неопознано\s*\([^\d)]*(\d+)[^)]*\)$/,
   ITEM_SUPERIOR: /^(.*) высокого качества$/,
   MAP_BLIGHTED: /^Заражённая (.*)$/,
   MAP_BLIGHT_RAVAGED: /^Разорённая Скверной (.*)$/,

@@ -80,6 +80,7 @@ export interface ItemFilters {
     value: true
     disabled: boolean
   }
+  unidentifiedTier?: FilterNumeric
   veiled?: {
     statRefs: string[]
     disabled: boolean

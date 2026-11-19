@@ -15,6 +15,8 @@
         :filter="filters.sentinelCharge" :name="t('item.sentinel_charge')" />
       <filter-btn-numeric v-if="filters.itemLevel"
         :filter="filters.itemLevel" :name="t('item.item_level')" />
+      <filter-btn-numeric v-if="filters.unidentifiedTier"
+        :filter="filters.unidentifiedTier" :name="t('item.unidentified_tier')" />
       <filter-btn-numeric v-if="filters.stackSize"
         :filter="filters.stackSize" :name="t('item.stock')" />
       <filter-btn-numeric v-if="filters.whiteSockets"

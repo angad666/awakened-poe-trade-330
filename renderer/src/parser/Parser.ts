@@ -473,6 +473,13 @@ function parseUnidentified (section: string[], item: ParsedItem) {
     item.isUnidentified = true
     return 'SECTION_PARSED'
   }
+  // 3.30: Magic and Rare items can drop with an Item Tier, shown as "Unidentified (Tier 4)"
+  const tierMatch = section[0].match(_$.UNIDENTIFIED_TIER)
+  if (tierMatch) {
+    item.isUnidentified = true
+    item.unidentifiedTier = Number(tierMatch[1])
+    return 'SECTION_PARSED'
+  }
   return 'SECTION_SKIPPED'
 }
 
