@@ -1,3 +1,35 @@
+# Awakened PoE Trade — 3.30 (Covens) build
+
+This is [Awakened PoE Trade](https://github.com/SnosMe/awakened-poe-trade) by SnosMe with fixes for
+Path of Exile 3.30 items that the official release doesn't handle yet. Hotkeys, settings and behaviour
+are the same as the official app.
+
+**Download:** grab `Awakened-PoE-Trade-Setup-*.exe` from the
+[latest release](https://github.com/angad666/awakened-poe-trade-330/releases/latest) and run it.
+Installing over the official app keeps your settings. Windows may show a SmartScreen warning
+because the installer isn't code-signed: click *More info → Run anyway*.
+
+### What's fixed for 3.30
+
+- **Item Tier on unidentified items:** "Unidentified (Tier 4)" items are recognised again, and the
+  search includes an *Unid. Tier* filter (on by default).
+- **Chronicle of Atzoatl:** temple rooms are recognised again, with the Open/Obstructed tick boxes,
+  including the renamed Cradle of Creation, Royal Forge and Grand Reactor rooms.
+- **Viscera:** price checks now work and search by slot (head, torso, upper/lower limb) and implicit.
+- **Uniques with skill names** such as "Trigger Level 10 Void Gaze…" are matched again (3.30 added an
+  invisible character before skill names).
+- **Frayed Thread** price checks, plus six uniques and a stat that the 3.30 data update dropped.
+
+Also included from the official source, but not yet in an official release: twice-corrupted items,
+rare-only mods and 9-mod maps, Thread/Atlas Drops map stats, and the *Not Catalysed* jewellery filter.
+
+Not supported (same as the official app): Enshrouded items, because the trade site can't filter them
+by their original unique.
+
+Updates for this build come from this repository's releases, not the official one.
+
+---
+
 # ![Awakener's Orb](https://web.poecdn.com/image/Art/2DItems/Currency/TransferOrb.png) Awakened PoE Trade
 
 [![](https://user-images.githubusercontent.com/4292308/153364874-dde23599-278c-4350-8d86-dadbc4b978b3.svg)](https://somsubhra.github.io/github-release-stats/?username=SnosMe&repository=awakened-poe-trade)

@@ -1,6 +1,6 @@
 {
   "name": "awakened-poe-trade",
-  "version": "3.30.101",
+  "version": "3.30.201",
   "private": true,
   "scripts": {
     "dev": "node build/script.mjs",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SnosMe/awakened-poe-trade.git"
+    "url": "https://github.com/angad666/awakened-poe-trade-330.git"
   },
   "main": "dist/main.js",
   "dependencies": {
