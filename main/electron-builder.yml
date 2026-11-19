@@ -14,6 +14,11 @@ files:
     to: "."
 extraMetadata:
   main: "main.js"
+electronFuses:
+  # ignore ELECTRON_RUN_AS_NODE inherited from the launching environment
+  # (e.g. a VS Code terminal); with it set the app would exit without a window
+  runAsNode: false
+  resetAdHocDarwinSignature: true
 nsis:
   oneClick: false
   allowToChangeInstallationDirectory: true

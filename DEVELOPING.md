@@ -40,3 +40,13 @@ npm run build
 # install without errors
 CSC_NAME="Certificate name in Keychain" npm run package
 ```
+
+### Packaging on Windows
+
+- `npx electron-builder build --win -p never` (in `main/`, after building `renderer/` and `main/`).
+- If packaging fails with *"Cannot create symbolic link : A required privilege is not held by the client"*
+  while extracting `winCodeSign`, either enable Windows Developer Mode, or extract the archive once
+  by hand (the two macOS symlink errors are harmless):
+  `node_modules\7zip-bin\win\x64\7za.exe x -y %LOCALAPPDATA%\electron-builder\Cache\winCodeSign\<id>.7z -o%LOCALAPPDATA%\electron-builder\Cache\winCodeSign\winCodeSign-2.6.0`
+- When starting the dev build (`npm run dev`) from a VS Code terminal, clear `ELECTRON_RUN_AS_NODE`
+  first, or Electron starts as plain Node and exits. Packaged builds ignore this variable.
